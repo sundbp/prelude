@@ -6,7 +6,7 @@
 (require 'cider-mode)
 (require 'cider-repl)
 
-(addb-to-list 'auto-mode-alist '("\\.boot\\'" . clojure-mode))
+(add-to-list 'auto-mode-alist '("\\.boot\\'" . clojure-mode))
 
 (define-key cider-mode-map (kbd "M-RET") 'cider-doc)
 (define-key cider-repl-mode-map (kbd "M-RET") 'cider-doc)
